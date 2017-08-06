@@ -1,0 +1,226 @@
+html {
+  min-width: 1000;
+  min-height: 850;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #2F5597; /* dark blue */
+}
+ .pagination {
+    display: inline-block;
+}
+
+.pagination a { /* unselected */
+    color: black; /* font color */
+	background-color: #769BDE; /* light blue */
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #CD5933; /* border color */
+}
+
+.pagination a.active { /* selected box */
+    background-color: #CD5933; /* dark orange */
+    color: white; /* font color */
+    border: 1px solid #CD5933;
+}
+
+.pagination a:hover:not(.active) {
+	background-color: #FF6600;  /* light orange */
+    color: white; /* font color */}
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #769BDE; /* light blue */
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #2F5597;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {color: #2F5597;}
+.hdr-group {
+  background-color: #2F5597; /* dark blue */
+  color: #FF6600; /* light orange */
+  font-family: Verdana, Geneva, sas-serif; 
+  font-size: 100%;
+  font-style: italic;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  }
+
+.hdr-group img {
+  float:right;
+  padding: 0px 24px;
+}
+h2{
+  background-color: #2F5597; /* dark blue */
+  color: #FF6600; /* light orange */
+  font-style: italic;
+  text-align: center;  
+  text-indent 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  } 
+ 
+h3   {
+  background-color: #2F5597; /* dark blue */
+  color: #FFFFFF; 
+  text-align: center; 
+  padding: 0px 0px;
+  font-style: italic;
+}
+h6   { 
+  background-color: #769BDE; /* light blue */
+  color: #FFFFFF; 
+  text-align: center; 
+  padding: 0px 0px;
+  font-family: Verdana, Geneva, sas-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+}
+p   {
+  
+  color: #FFFFFF; 
+  text-align: center; 
+  padding: 0px 0px;
+  font-family: Verdana, Geneva, sas-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#table-win {
+	background-color: #2F5597; /* dark blue */
+    border-width: 1px;
+	border-color: white;
+	border-style: solid;    
+	color: solid blue;
+	display: table;
+	height: 600px;
+	width: 100%;
+}
+
+#row-win {
+	background-color: #2F5597; /* dark blue */
+    color: white;
+	display: table-row;
+	width: 100%;
+}
+
+.btn-group {
+	background-color: #2F5597; /* dark blue */
+    color: white;
+	font-family: Verdana, Geneva, sas-serif; 
+	font-style: italic;
+	text-align: center;
+	height: auto;
+	width: 150px;
+	display: table-cell;
+}
+
+.btn-group button {
+	background-color: #769BDE; /* light blue */
+    border: 1px solid blue;
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #FF6600; /* light orange */
+}
+
+.mid-container {
+	background-color: #2F5597; /* dark blue */
+    color: white;
+	width: auto;
+	height: auto;
+	display: table-cell;
+}
+
+.right-container {
+	background-color: #2F5597; /* dark blue */
+    border-width: 1px;
+	border-color: blue;
+	border-style: solid;
+    color: white;
+	width: 300px;
+	height: auto;
+	display: table-cell;
+}
+
+#main-win {
+	background-color: #769BDE; /* light blue */
+    border-width: 1px;
+	border-color: blue;
+	border-style: solid;
+    color: white;
+	height: 75%;
+	width: 100%;
+	box-sizing: border-box;
+}
+#main-win div {
+	display: none;
+}
+
+
+#comment-win {
+	background-color: #2F5597; /* dark blue */
+    border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	height: 25%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#comment-win p   {
+	background-color: #EEEEEE;
+	font-family: Verdana, Geneva, sas-serif; 
+	font-style: italic;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+	color: black; 
+}
+
+.chart-win {
+	background-color: white;
+    border-width: 1px;
+	border-color: blue;
+	border-style: solid;
+	height: 25%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.chart-win p   {
+	background-color: white;
+	font-family: Verdana, Geneva, sas-serif; 
+	font-style: italic;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+	color: black; 
+}
+#welcome-text {
+	display: block;
+	background-color: #769BDE;
+	color: #FF6600;
+}
+ .chart rect { fill: steelblue } 

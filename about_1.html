@@ -1,0 +1,137 @@
+<!Doctype html>
+<head>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="text/about.css">
+</head>
+<html>
+<body>
+	<div class="hdr-group" title="Main Title Area">
+		<img title="Main Logo" src="images/UIUC_Logo.jpg" alt="cs.illinois.edu" width="176" height="34" >
+		<h1 title="Main Title">All About CS498 Data Visualization (Summer 2017)</h1>
+	</div>
+	<ul class="breadcrumb" title="Page Title Navigation">
+	  <li title="Essay"               ><a href="about_1.html" class="active">About</a></li>
+	  <li title="Tree Map Chart"      ><a href="hierarchy.html">Hierarchy</a></li>
+	  <li title="Bar Chart"           ><a href="metrics.html">Metrics</a></li>
+	  <li title="Graph Node Chart"    ><a href="relationships.html">Relationships</a></li>
+	</ul>
+	<div id="table-win" title="Content Area">
+		<div id="chart-win" title="Essay Comments">
+				<h2>About CS498 Data Visualization</h2>
+				<h2>By</h2>
+				<h2>Paul Figliozzi</h2>
+				<h2>INTRODUCTION</h2>
+				<p>This narrative visualization is regarding the nature and content of the course <i>CS498 Data Visualization (Summer, 2017)</i>.</p>
+				<p>This subject was chosen as a study investigating the type of information which can be gleaned given the use of data which is primarily hierarchical in nature.</p>
+				<p>It uses a custom dashboard interface built using HTML5, JavaScript and the D3 library.</p>
+				<h2>NARRATIVE STRUCTURE</h2>
+				<p>The narrative is structured as a hybrid "martini glass", where:</p>
+				<h3>GUIDED PRESENTATION (Slideshow)</h3>
+				<p>The presentation represents the "stem" of the martini glass. Upon invocation (startup), 
+				the reader is directed to follow the slideshows in a linear fashion by progressing through the slides using the provided navigation controls.</p>
+				<p>The reader can track progress through the slides using the progress indicator. The reader can also (later) review the slides in 
+				a non-linear fashion by jumping to a slide via clicking on the appropriate progress indicator.</p>
+				<h3>ANALYSIS & DISCOVERY (Charts and Graphs)</h3>
+				<p>This represents the "cup" portion of the martini glass, where the reader can directly navigate to the charts via button selection from the left-side menu
+				or by clicking on the chart (right side).</p>
+				<h2>SCENES</h2>
+				<p>A storyboard was used to construct the narrative, resulting in the resulting scenes:</p>
+				<h3>FIRST SCENE</h3>
+				<p>The dashboard interface itself represents the first scene encountered.</p>
+				<h3>SLIDESHOW SCENES</h3>
+				<p>Each slide within the slide show is a scene. These scenes are progressive
+				in nature in telling the story of the narrative visualization.</p>
+				<h3>CHART SCENES</h3>
+				<p>Each chart presents information supporting analytical results and conclusions mentioned
+				in the slide, or the ability for the viewer to explore the data (self-guided discovery) of the data.</p>
+				<h2>ANNOTATIONS</h2>
+				<p>Tooltips are used to highlight information in the charts and area location in the user interface.</p>
+				<p>Comments and descriptions are shown in the comment area (middle-lower area) to describe highlights
+				regarding content shown in the main presentation area.</p>
+				<h2>PARAMETERS</h2>
+				<h3>CURRENT DASHBOARD AREA</h3>
+				<p>Variable to track which dashboard is currently selected for use (about, slideshow, chart types).</p>
+				<h3>AREA TRANSITION STATE</h3>
+				<p>Tracks whether the area is in a zoomed or un-zoomed state.</p>
+				<h3>HIERARCHICAL CHART NAVIGATION</h3>
+				<p>Variable to track current position selected within the hierarchy.</p>
+				<h3>CURRENT SLIDESHOW POSITION</h3>
+				<p>Variable tracks current, previous and next slides within the slideshow.</p>
+				<h3>COMMENT AREA</h3>
+				<p>Variables to track state of the comment area (clear, populated) and contents shown, comments associated 
+				with other areas for display (lookup table).</p>
+				<h2>TRIGGERS</h2>
+				<p>User interface events used in this narrative include:</p>
+				<h3>BUTTON TRIGGERS/EVENTS</h3>
+				<h4>MAIN MENU NAVIGATION</h4>
+				<p>This vertical button group provides self-guided dashboard navigation:</p>
+				<h5>BUTTON SELECT</h5>
+				<p>Triggers a transition to the selected dashboard area (About, Slideshow, Chart Type)
+				or action (Exit).</p>
+				<h5>BUTTON HIGHLIGHT(Orange) </h5>
+				<p>CONSTANT (After BUTTON SELECT) highlight shows current dashboard area of focus,</p>
+				<p>TEMPORARY (Cursor FOCUS Event) highlight shows area to be selected if pressed.</p>
+				<h4>SLIDESHOW NAVIGATION</h4>
+				<p>Slide Buttons provide slideshow navigation:</p>
+				<p>FORWARD/PREVIOUS - Selection triggers guided (linear) slide movement,</p>
+				<h5>PROGRESS BAR</h5>
+				<p>BAR SELECTION (After BUTTON SELECT) - Triggers a jump to the matching slide (self-guided, non-linear slide movement).</p>
+				<p>BAR HIGHLIGHT (After BUTTON SELECT)- Bar within the Progress Bar highlights relative slide position within the slideshow.</p>
+				<h3>CURSOR POSITIONING TRIGGERS</h3>
+				<p>BUTTON FOCUS - Moving the mouse over an area of focus (button) shows button selection.</p>
+				<p>DASHBOARD AREA HOVER - Hovering the mouse over a dashboard area shows a tooltip indicating the area name. Area borders
+				may also highlight.</p>
+				<p>CHART AREA HOVER - May show a tooltip annotation of interest within the chart (varies by chart type).</p>
+				<h3>AREA TRIGGERS</h3>
+				<p>ENTER/EXIT - Transitioning to an area may trigger highlighting, chart/data load/re-load, or other 
+				transitions (zooming/un-zooming).</p>
+				<p>COMMENT AREA - Slide transitions or selection of chart areas may cause the comment area to load comments, descriptions or
+				annotations of interest related to the area of focus.</p>
+				<h2>ACKNOWLEDGEMENTS</h2>
+				<h3>DATA SOURCES</h3>
+				<p>The "raw" or original data used is primarily comprised of the CS498DV course materials extracted from Coursera. This
+				includes the lecture materials (videos, lecture slides, narrations).</p>
+				<p>Coursera CS498-DV Course Materials: https://www.coursera.org/learn/cs-498-dv/home/welcome</p>
+				<p>Author: John C. Hart: https://cs.illinois.edu/directory/profile/jch</p>
+				<h4>Data Cleaning</h4>
+				<p>Data acquisition, cleaning and transformation was accomplished using a variety of methods and tools, including Python
+				scripts, NotePad++ and Excel worksheets.</p>
+				<h4>Coursera Download</h4>
+				<p>The course materials and associated hierarchical nature of the course materials were extracted using the coursera-dl Python script:</p>
+				<p>coursera-dl: https://github.com/coursera-dl/coursera-dl</p>
+				<p>Posted by Yuri Bochkarev (AKA balta2ar): https://github.com/balta2ar</p>
+				<h4>References</h4> 
+				<p>General Reference: https://www.w3schools.com/</p>
+				<p>CSS Buttons: https://www.w3schools.com/css/css3_buttons.asp</p>
+				<p>How to Create a Button Group: https://www.w3schools.com/howto/howto_css_button_group.asp</p>
+				<p>SVG Button: https://bl.ocks.org/pbogden/7487564</p>
+				<p>HTML Button: https://bl.ocks.org/pbogden/7669ca97471e7a7a7e33</p>
+				<h4>D3 Example Visualizations</h4>
+				<p>Big-D Dashboard: http://twistedhardware.github.io/theme-v45</p>
+				<p>Simple D3JS Dashboard: http://bl.ocks.org/diethardsteiner/3287802</p>
+				<p>reveal.js – The HTML Presentation Framework: http://lab.hakim.se/reveal-js/#/4</p>
+				<p>Force-Directed Graph  mbostock: https://bl.ocks.org/mbostock/4062045</p>
+				<p>D3.js tree diagram generated from external (JSON) data - bl.ocks.org: http://bl.ocks.org/d3noob/8329447</p>
+				<p>D3.js Tips and Tricks: Tree diagrams in d3.js: http://www.d3noob.org/2014/01/tree-diagrams-in-d3js_11.html</p>
+				<p>D3.V4 - Redesigned - Company Employees Hierarchy Chart: https://codepen.io/bumbeishvili/pen/RodMYG</p>
+				<p>Zoomable Tree map Template - bl.ocks.org: http://bl.ocks.org/ganeshv/6a8e9ada3ab7f2d88022</p>
+				<h4>Other</h4>
+				<p>Breadcrumb Navigation Examined: Best Practices & Examples - Hongkiat: http://www.hongkiat.com/blog/breadcrumb-navigation-examined-best-practices-examples/</p>
+				<p>Slick Progressbar: https://codepen.io/fjacobi/pen/mVJpma</p>
+				<p>So You Want to Build A Scroller - Jim Vallandingham: http://vallandingham.me/scroller.html</p>
+		</div>
+		<div id="comment-win" title="Page Number Navigation">
+			<div class="pagination">
+			  <a href="#" title="Prev Page">&laquo;</a>
+			  <a href="about_1.html"       title="1. Essay" class="active">1</a>
+			  <a href="hierarchy.html"     title="2. Tree Map Chart">2</a>
+			  <a href="metrics.html"       title="3. Bar Chart">3</a>
+			  <a href="relationships.html" title="4. Graph Node Chart">4</a>
+			  <a href="hierarchy.html" title="Next Page" class="active">&raquo;</a>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
+

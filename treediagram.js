@@ -14,9 +14,9 @@ var diagonal = d3.svg.diagonal()
 	.style("border", "solid")
   .append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
+	console.log("treediagram.js d3 tree: " + tree);
 // load the external data
-d3.json("treeData.json", function(error, treeData) {
+d3.json("//scripts/treeData.json", function(error, treeData) {
   root = treeData[0];
   update(root);
 });

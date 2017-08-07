@@ -28,15 +28,15 @@
 				<p>This subject was chosen as a study investigating the type of information which can be gleaned given the use of data which is primarily hierarchical in nature.</p>
 				<p>It uses a custom dashboard interface built using HTML5, JavaScript and the D3 library.</p>
 				<h2>NARRATIVE STRUCTURE</h2>
-				<p>The narrative is structured as a hybrid "martini glass", where:</p>
-				<h3>GUIDED PRESENTATION (Slideshow)</h3>
-				<p>The presentation represents the "stem" of the martini glass. Upon invocation (startup), 
-				the reader is directed to follow the slideshows in a linear fashion by progressing through the slides using the provided navigation controls.</p>
+				<p>The narrative is structured as a "drilldown slideshow", where:</p>
+				<h3>ABOUT (This Page)</h3>
+				<p>The About page is the essay describing the narrative. It is invoked upon startup of the narrative. Navigation is both linear (see navigation bars at the bottom of each page using previous and forward buttons)
+				as well as non-linear (viewer-directed) where a particular page can be chosen at the top "breadcumbs" menu or by selecting the page number at the bottom.</p>
 				<p>The reader can track progress through the slides using the progress indicator. The reader can also (later) review the slides in 
 				a non-linear fashion by jumping to a slide via clicking on the appropriate progress indicator.</p>
 				<h3>ANALYSIS and DISCOVERY (Charts and Graphs)</h3>
-				<p>This represents the "cup" portion of the martini glass, where the reader can directly navigate to the charts via button selection from the left-side menu
-				or by clicking on the chart (right side).</p>
+				<p>The reader can directly navigate to the charts via button selection from the top or bottom menus and drill down on information in the chart.
+				</p>
 				<h2>SCENES</h2>
 				<p>A storyboard was used to construct the narrative, resulting in the resulting scenes:</p>
 				<h3>FIRST SCENE</h3>
@@ -49,13 +49,9 @@
 				in the slide, or the ability for the viewer to explore the data (self-guided discovery) of the data.</p>
 				<h2>ANNOTATIONS</h2>
 				<p>Tooltips are used to highlight information in the charts and area location in the user interface.</p>
-				<p>Comments and descriptions are shown in the comment area (middle-lower area) to describe highlights
-				regarding content shown in the main presentation area.</p>
 				<h2>PARAMETERS</h2>
 				<h3>CURRENT DASHBOARD AREA</h3>
 				<p>Variable to track which dashboard is currently selected for use (about, slideshow, chart types).</p>
-				<h3>AREA TRANSITION STATE</h3>
-				<p>Tracks whether the area is in a zoomed or un-zoomed state.</p>
 				<h3>HIERARCHICAL CHART NAVIGATION</h3>
 				<p>Variable to track current position selected within the hierarchy.</p>
 				<h3>CURRENT SLIDESHOW POSITION</h3>
@@ -67,7 +63,7 @@
 				<p>User interface events used in this narrative include:</p>
 				<h3>BUTTON TRIGGERS/EVENTS</h3>
 				<h4>MAIN MENU NAVIGATION</h4>
-				<p>This vertical button group provides self-guided dashboard navigation:</p>
+				<p>This horizontal breadcrumb group provides self-guided dashboard navigation:</p>
 				<h5>BUTTON SELECT</h5>
 				<p>Triggers a transition to the selected dashboard area (About, Slideshow, Chart Type)
 				or action (Exit).</p>
